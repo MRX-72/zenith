@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith VA - Automated Vulnerability Assessment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #6366f1, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 300% 300%;
+            animation: gradient-text 5s ease infinite;
+        }
+        @keyframes gradient-text {
+            0% {background-position: 0%}
+            100% {background-position: 100%}
+        }
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+        }
+        .price-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .price-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+    <!-- Hero Section -->
+    <header class="container mx-auto px-6 py-20 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">Zenith VA</h1>
+        <p class="text-xl text-slate-300 mb-8">Automated Vulnerability Assessment - Smarter Security, Simplified</p>
+        
+        <!-- Description Paragraphs -->
+        <div class="max-w-2xl mx-auto text-slate-400 text-left mb-12">
+            <p class="mb-4">
+                <strong>Vulnerability Assessment (VA)</strong> is the process of identifying, classifying, and prioritizing security weaknesses in your systems, networks, and applications. It’s like a health check-up for your digital infrastructure, ensuring you’re protected against potential threats.
+            </p>
+            <p>
+                In today’s world, businesses face constant cyber threats. A single vulnerability can lead to data breaches, financial losses, and reputational damage. With Zenith VA, you get <strong>automated, affordable, and actionable</strong> insights to secure your business before it’s too late.
+            </p>
+        </div>
+
+        <a href="#plans" class="bg-indigo-600 hover:bg-indigo-700 px-8 py-3 rounded-lg font-medium">View Plans →</a>
+        
+        <!-- Animated Scan Visualization -->
+        <div class="mt-20 relative h-2 bg-slate-700 rounded-full mx-auto w-full md:w-1/2">
+            <div class="absolute h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-1/3 scan-animation"></div>
+        </div>
+    </header>
+
+    <!-- Features Grid -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12">Why Choose Zenith VA?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature Card 1 -->
+            <div class="feature-card bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500">
+                <div class="text-3xl mb-6 text-indigo-400">📊</div>
+                <h3 class="text-xl font-bold mb-4">Smart Risk Prioritization</h3>
+                <p class="text-slate-400">AI-powered severity scoring with CVSS metrics</p>
+            </div>
+
+            <!-- Feature Card 2 -->
+            <div class="feature-card bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-green-500">
+                <div class="text-3xl mb-6 text-green-400">🔄</div>
+                <h3 class="text-xl font-bold mb-4">Scheduled Reporting</h3>
+                <p class="text-slate-400">Automated weekly/monthly PDF+MD exports</p>
+            </div>
+
+            <!-- Feature Card 3 -->
+            <div class="feature-card bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-pink-500">
+                <div class="text-3xl mb-6 text-pink-400">🔗</div>
+                <h3 class="text-xl font-bold mb-4">API Integration</h3>
+                <p class="text-slate-400">Connect with your CI/CD pipeline instantly</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="plans" class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12">Transparent Pricing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <!-- One-Time Scan -->
+            <div class="price-card bg-slate-800 p-6 rounded-2xl border-2 border-indigo-500">
+                <h3 class="text-2xl font-bold mb-4">Starter</h3>
+                <div class="text-4xl font-bold mb-6">$49</div>
+                <ul class="text-slate-400 space-y-3 mb-8">
+                    <li>✓ Single Full Scan</li>
+                    <li>✓ 1 Report Format</li>
+                    <li>✗ Priority Support</li>
+                </ul>
+                <button class="w-full bg-indigo-600 hover:bg-indigo-700 py-3 rounded-lg">Start Now</button>
+            </div>
+
+            <!-- Monthly Plan -->
+            <div class="price-card bg-slate-800 p-6 rounded-2xl border-2 border-purple-500">
+                <h3 class="text-2xl font-bold mb-4">Monthly</h3>
+                <div class="text-4xl font-bold mb-6">$29<small class="text-lg text-slate-400">/mo</small></div>
+                <ul class="text-slate-400 space-y-3 mb-8">
+                    <li>✓ 4 Scans/Month</li>
+                    <li>✓ 2 Report Formats</li>
+                    <li>✓ Email Support</li>
+                </ul>
+                <button class="w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-lg">Most Popular</button>
+            </div>
+
+            <!-- 3-Month Plan -->
+            <div class="price-card bg-slate-800 p-6 rounded-2xl border-2 border-green-500">
+                <h3 class="text-2xl font-bold mb-4">3-Month</h3>
+                <div class="text-4xl font-bold mb-6">$75<small class="text-lg text-slate-400">/3mo</small></div>
+                <ul class="text-slate-400 space-y-3 mb-8">
+                    <li>✓ 12 Scans</li>
+                    <li>✓ 2 Report Formats</li>
+                    <li>✓ Email Support</li>
+                </ul>
+                <button class="w-full bg-green-600 hover:bg-green-700 py-3 rounded-lg">Save 15%</button>
+            </div>
+
+            <!-- 6-Month Plan -->
+            <div class="price-card bg-slate-800 p-6 rounded-2xl border-2 border-pink-500">
+                <h3 class="text-2xl font-bold mb-4">6-Month</h3>
+                <div class="text-4xl font-bold mb-6">$135<small class="text-lg text-slate-400">/6mo</small></div>
+                <ul class="text-slate-400 space-y-3 mb-8">
+                    <li>✓ 24 Scans</li>
+                    <li>✓ 3 Report Formats</li>
+                    <li>✓ Priority Support</li>
+                </ul>
+                <button class="w-full bg-pink-600 hover:bg-pink-700 py-3 rounded-lg">Save 25%</button>
+            </div>
+
+            <!-- 1-Year Plan -->
+            <div class="price-card bg-slate-800 p-6 rounded-2xl border-2 border-yellow-500">
+                <h3 class="text-2xl font-bold mb-4">1-Year</h3>
+                <div class="text-4xl font-bold mb-6">$240<small class="text-lg text-slate-400">/year</small></div>
+                <ul class="text-slate-400 space-y-3 mb-8">
+                    <li>✓ 48 Scans</li>
+                    <li>✓ 3 Report Formats</li>
+                    <li>✓ 24/7 Support</li>
+                </ul>
+                <button class="w-full bg-yellow-600 hover:bg-yellow-700 py-3 rounded-lg">Save 35%</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="bg-indigo-500/20 p-8 rounded-xl">
+                <div class="text-4xl font-bold mb-2">24h</div>
+                <div class="text-slate-400">Avg. Report Delivery</div>
+            </div>
+            <div class="bg-green-500/20 p-8 rounded-xl">
+                <div class="text-4xl font-bold mb-2">99.9%</div>
+                <div class="text-slate-400">Automation Accuracy</div>
+            </div>
+            <!-- Add 2 More Stats -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto px-6 py-16 text-center">
+        <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+        <p class="text-slate-300 mb-8">Have questions? Reach out to us via email or social media.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:contact@zenithva.com" class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg">✉️ contact@zenithva.com</a>
+            <a href="#" class="bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-lg">🐦 Twitter</a>
+            <a href="#" class="bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-lg">📸 Instagram</a>
+            <a href="#" class="bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-lg">💼 LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Glow Effects -->
+    <div class="absolute top-0 left-0 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl -z-10"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
